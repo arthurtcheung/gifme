@@ -17,6 +17,19 @@ document.getElementById('search-input').addEventListener('keydown', function (ev
         document.getElementById('gif-and-copy-button').classList.remove('hide');
       })
       .catch(error => console.log('Error fetching GIF: ', error));
+    } 
+    
+    else if (searchInput === '') {
+      document.getElementById('gif-and-copy-button').classList.add('hide');
     }
   }
+});
+
+document.getElementById('copy-button').addEventListener('click', function () {
+  const gifUrl = gif.src;
+  navigator.clipboard.writeText(gifUrl).then(() => {
+    alert('GIF copied to clipboard: ' + gifUrl)
+  }, () => {
+    console.error("failed to copy")
+  })
 });
