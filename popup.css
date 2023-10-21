@@ -1,0 +1,27 @@
+#body {
+  background-color: #1F8AFF;
+}
+
+#logo-and-title {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 30px;
+  margin-right: 5px;
+}
+
+#title {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#gif-and-copy-button {
+  background-color: aqua;
+}
+
+.hide {
+  display: none;
+}
+
